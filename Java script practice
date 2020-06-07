@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link  href="index.css">
+    <title>HTML</title>
+    <script>
+    
+    function Setcolor(color, color2) {
+    document.querySelector('body').style.backgroundColor = color;
+    document.querySelector('body').style.color = color2;
+    }    
+        
+    function hello(self) {
+        var target = document.querySelector('body');
+      if(self.value==='night'){
+      Setcolor('black', 'white');
+      self.value = 'day';
+      var aslice = document.querySelectorAll('a');
+      var i = 0;
+      while(i<aslice.length){
+      aslice[i].style.color = 'powderblue';
+      i = i + 1; 
+       }
+    } else {
+      Setcolor('white', 'black');
+      self.value = 'night';
+      var aslice = document.querySelectorAll('a');
+      var i = 0;
+      while(i<aslice.length){
+      aslice[i].style.color = 'blue';
+      i = i + 1; 
+      }
+    }
+    }
+    
+    
+    
+    
+    
+    </script>
+</head>
+<body>
+   <h1 id="header">HTML</h1>
+    <p class="content"><a href="https://www.w3schools.com/html/" target="_blank">HTML</a> is the standard markup language for Web pages.<br>
+    <p class="content"><a href="https://www.w3schools.com/html/" target="_blank">HTML</a> is the standard markup language for Web pages.<br>
+    <p class="content"><a href="https://www.w3schools.com/html/" target="_blank">HTML</a>
+     <p class="content"><a href="https://www.w3schools.com/html/" target="_blank">HTML</a><p class="content"><a href="https://www.w3schools.com/html/" target="_blank">HTML</a> is the standard markup language for Web pages.<br>
+      With HTML you can create your own Website.<br>
+      This tutorial follows the latest HTML 5 standard.<br>
+      HTML is easy to learn - You will enjoy it!</p>
+      
+      <input class="button_1 "type="button" value="night" onclick="
+      hello(this);">
+
+    
+</body>
+</html>
