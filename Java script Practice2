@@ -1,0 +1,14 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    
+//      var aslice = document.querySelectorAll('a');
+//      var i = 0;
+//      while(i<aslice.length){
+//      aslice[i].style.color = 'powderblue';
+//      i = i + 1; 
+//       }
+          
+          $('a').css('color', powderblue);
+          
+</script>
